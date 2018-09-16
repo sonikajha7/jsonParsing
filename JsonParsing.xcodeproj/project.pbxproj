@@ -14,6 +14,8 @@
 		430B6F82214527AF005A6845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430B6F80214527AF005A6845 /* LaunchScreen.storyboard */; };
 		430B6F8D214527AF005A6845 /* JsonParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B6F8C214527AF005A6845 /* JsonParsingTests.swift */; };
 		430B6F98214527AF005A6845 /* JsonParsingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430B6F97214527AF005A6845 /* JsonParsingUITests.swift */; };
+		43FCA3F5214D1233005FA4E7 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCA3F4214D1233005FA4E7 /* PostTableViewCell.swift */; };
+		43FDCC41214E476B00FDBA74 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDCC40214E476B00FDBA74 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		430B6F93214527AF005A6845 /* JsonParsingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JsonParsingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		430B6F97214527AF005A6845 /* JsonParsingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParsingUITests.swift; sourceTree = "<group>"; };
 		430B6F99214527AF005A6845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43FCA3F4214D1233005FA4E7 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		43FDCC40214E476B00FDBA74 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +101,9 @@
 		430B6F76214527AF005A6845 /* JsonParsing */ = {
 			isa = PBXGroup;
 			children = (
-				430B6F77214527AF005A6845 /* AppDelegate.swift */,
-				430B6F79214527AF005A6845 /* ViewController.swift */,
-				430B6F7B214527AF005A6845 /* Main.storyboard */,
+				43FCA3F0214D112E005FA4E7 /* MVC */,
+				43FCA3EF214D110D005FA4E7 /* AppDelegate */,
 				430B6F7E214527AF005A6845 /* Assets.xcassets */,
-				430B6F80214527AF005A6845 /* LaunchScreen.storyboard */,
 				430B6F83214527AF005A6845 /* Info.plist */,
 			);
 			path = JsonParsing;
@@ -123,6 +125,50 @@
 				430B6F99214527AF005A6845 /* Info.plist */,
 			);
 			path = JsonParsingUITests;
+			sourceTree = "<group>";
+		};
+		43FCA3EF214D110D005FA4E7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				430B6F77214527AF005A6845 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		43FCA3F0214D112E005FA4E7 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				43FCA3F3214D114F005FA4E7 /* Controller */,
+				43FCA3F2214D1148005FA4E7 /* View */,
+				43FCA3F1214D1140005FA4E7 /* Model */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		43FCA3F1214D1140005FA4E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43FCA3F2214D1148005FA4E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				430B6F7B214527AF005A6845 /* Main.storyboard */,
+				430B6F80214527AF005A6845 /* LaunchScreen.storyboard */,
+				43FCA3F4214D1233005FA4E7 /* PostTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43FCA3F3214D114F005FA4E7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				430B6F79214527AF005A6845 /* ViewController.swift */,
+				43FDCC40214E476B00FDBA74 /* SecondViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +305,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43FDCC41214E476B00FDBA74 /* SecondViewController.swift in Sources */,
 				430B6F7A214527AF005A6845 /* ViewController.swift in Sources */,
 				430B6F78214527AF005A6845 /* AppDelegate.swift in Sources */,
+				43FCA3F5214D1233005FA4E7 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
